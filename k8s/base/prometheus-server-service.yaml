@@ -16,9 +16,6 @@ spec:
       targetPort: 9090
   selector:
     io.kompose.service: prometheus-server
-  initContainers:
-      - name: init-discovery-server
-        image: busybox
-        command: ['sh', '-c', 'until nc -z discovery-server:8761; do echo waiting for discovery-server; sleep 2; done;']
+  
 status:
   loadBalancer: {}

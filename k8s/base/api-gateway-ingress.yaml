@@ -19,9 +19,6 @@ spec:
           - backend:
               serviceName: api-gateway
               servicePort: 8080
-initContainers:
-- name: init-discovery-server
-  image: busybox
-  command: ['sh', '-c', 'until nc -z discovery-server:8761; do echo waiting for discovery-server; sleep 2; done;']
+
 status:
   loadBalancer: {}
