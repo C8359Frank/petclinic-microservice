@@ -35,6 +35,8 @@ spec:
             - containerPort: 3306
           resources: {}
       restartPolicy: Always
+
+      # for all other microservices except config-server and discovery-server
       initContainers:
       - name: init-discovery-server
         image: busybox
