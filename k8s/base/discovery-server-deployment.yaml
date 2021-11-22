@@ -34,6 +34,7 @@ spec:
       imagePullSecrets:
         - name: regcred
       restartPolicy: Always
+
       # for discovery server
       initContainers:
       - name: init-config-server
