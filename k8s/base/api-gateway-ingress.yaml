@@ -4,7 +4,7 @@ metadata:
   annotations:
     kompose.cmd: kompose convert -f k8s/docker-compose.yml -o k8s/base
     kompose.image-pull-secret: regcred
-    kompose.service.expose: petclinic.awsdevopsengineermft.com
+    kompose.service.expose: petclinic.discoverdevops.com
     kompose.service.type: nodeport
     kompose.version: 1.22.0 (955b78124)
   creationTimestamp: null
@@ -13,12 +13,11 @@ metadata:
   name: api-gateway
 spec:
   rules:
-    - host: petclinic.awsdevopsengineermft.com
+    - host: petclinic.discoverdevops.com
       http:
         paths:
           - backend:
               serviceName: api-gateway
               servicePort: 8080
-
 status:
   loadBalancer: {}
