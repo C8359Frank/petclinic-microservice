@@ -19,6 +19,5 @@ spec:
           - backend:
               serviceName: api-gateway
               servicePort: 8080
-
 status:
   loadBalancer: {}

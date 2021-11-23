@@ -16,6 +16,5 @@ spec:
       targetPort: 7979
   selector:
     io.kompose.service: hystrix-dashboard
-  
 status:
   loadBalancer: {}

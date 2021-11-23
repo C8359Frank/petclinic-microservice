@@ -11,3 +11,4 @@ metadata:
 spec:
   type: ExternalName
   externalName: petclinic.c11rhku6j1nm.us-east-1.rds.amazonaws.com
+ 
